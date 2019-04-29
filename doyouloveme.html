@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doyouloveme</title>
+</head>
+<body>
+<form style="position: absolute; left:100px; top:150px">
+        <p><b>DO YOU LOVE ME?</b></p>
+        <br><br>
+</form>
+<input type="button" onclick="yes()" value="YES" style="position: absolute; left:100px; top:200px">
+<input type="button" onmouseover="no()" id="khong" value="NO" style="position: absolute; left:200px; top:200px">
+<script>
+    function yes() {
+        alert("Anh cũng yêu em");
+    }
+    function no() {
+        let a=document.getElementById("khong");
+        let b=document.getElementById("khong");
+        a.style.left=Math.round(Math.random()*window.innerWidth)+"px";
+        b.style.top=Math.round(Math.random()*window.innerHeight)+"px";
+    }
+</script>
+
+</body>
+</html>
